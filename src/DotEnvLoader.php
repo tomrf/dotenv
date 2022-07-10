@@ -16,6 +16,8 @@ class DotEnvLoader
     /**
      * Loads dotenv file into local environment, overwriting any environment
      * variable already set.
+     *
+     * @throws DotEnvLoaderException if parsing fails or if the file is not found
      */
     public function load(string $filename): void
     {
@@ -29,6 +31,8 @@ class DotEnvLoader
     /**
      * Loads dotenv file into local environment while preserving any existing
      * environment variable.
+     *
+     * @throws DotEnvLoaderException if parsing fails or if the file is not found
      */
     public function loadImmutable(string $filename): void
     {

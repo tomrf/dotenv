@@ -5,6 +5,29 @@
     "keywords": [ "dotenv", "env", "environment", "environment variables" ],
     "homepage": "http://github.com/tomrf/dotenv",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Tom Rune Flo",
+            "email": "tom@x86.no",
+            "homepage": "http://github.com/tomrf/"
+        }
+    ],
+    "extra": {
+        "intro": [
+            "Load environment variables from dotenv file using the PHP built-in parse_ini_file() function",
+            "with scanner mode `INI_SCANNER_TYPED` (See [PHP manual](https://www.php.net/manual/en/function.parse-ini-file.php))",
+            "",
+            "It is a simple, reliable and super fast way to load dotenv files without any bells and whistles."
+        ],
+        "example": [
+            "$dotEnvLoader = new \\Tomrf\\DotEnv\\DotEnvLoader();",
+            "",
+            "$dotEnvLoader->loadImmutable(__DIR__ . '/.env');    // loadImmutable() will not overwrite existing",
+            "                                                    // environment variables",
+            "",
+            "$dotEnvLoader->load('/path/to/dotenv/file');        // load() will overwrite existing environment variables"
+        ]
+    },
     "require": {
         "php": "^8.0"
     },
@@ -13,7 +36,8 @@
         "phpstan/phpstan": "^1.6",
         "friendsofphp/php-cs-fixer": "^3.8",
         "phpmd/phpmd": "^2.12",
-        "roave/security-advisories": "dev-latest"
+        "roave/security-advisories": "dev-latest",
+        "tomrf/readme-gen": "^0.0"
     },
     "autoload": {
         "psr-4": {

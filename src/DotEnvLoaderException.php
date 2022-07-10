@@ -6,6 +6,9 @@ namespace Tomrf\DotEnv;
 
 use RuntimeException;
 
-class DotEnvLoaderException extends RuntimeException
+/**
+ * @internal
+ */
+final class DotEnvLoaderException extends RuntimeException
 {
 }
