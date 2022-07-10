@@ -22,10 +22,11 @@
         "example": [
             "$dotEnvLoader = new \\Tomrf\\DotEnv\\DotEnvLoader();",
             "",
-            "$dotEnvLoader->loadImmutable(__DIR__ . '/.env');    // loadImmutable() will not overwrite existing",
-            "                                                    // environment variables",
+            "// loadImmutable() will not overwrite existing environment variables",
+            "$dotEnvLoader->loadImmutable(__DIR__ . '/.env');",
             "",
-            "$dotEnvLoader->load('/path/to/dotenv/file');        // load() will overwrite existing environment variables"
+            "// load() will overwrite existing environment variables",
+            "$dotEnvLoader->load('/path/to/dotenv/file');"
         ]
     },
     "require": {

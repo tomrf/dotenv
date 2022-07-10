@@ -20,10 +20,11 @@ composer require tomrf/dotenv
 ```php
 $dotEnvLoader = new \Tomrf\DotEnv\DotEnvLoader();
 
-$dotEnvLoader->loadImmutable(__DIR__ . '/.env');    // loadImmutable() will not overwrite existing
-                                                    // environment variables
+// loadImmutable() will not overwrite existing environment variables
+$dotEnvLoader->loadImmutable(__DIR__ . '/.env');
 
-$dotEnvLoader->load('/path/to/dotenv/file');        // load() will overwrite existing environment variables
+// load() will overwrite existing environment variables
+$dotEnvLoader->load('/path/to/dotenv/file');
 ```
 
 ## Testing
@@ -77,4 +78,4 @@ public function loadImmutable(
 
 ***
 
-_Generated 2022-07-10T02:06:20+02:00 using 📚[tomrf/readme-gen](https://packagist.org/packages/tomrf/readme-gen)_
+_Generated 2022-07-10T02:09:11+02:00 using 📚[tomrf/readme-gen](https://packagist.org/packages/tomrf/readme-gen)_
