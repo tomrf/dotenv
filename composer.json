@@ -17,7 +17,7 @@
             "Load environment variables from dotenv file using the PHP built-in parse_ini_file() function",
             "with scanner mode `INI_SCANNER_TYPED` (See [PHP manual](https://www.php.net/manual/en/function.parse-ini-file.php))",
             "",
-            "It is a simple, reliable and super fast way to load dotenv files without any bells and whistles."
+            "It is a simple, reliable and super fast way to load dotenv files without any bells nor whistles."
         ],
         "example": [
             "$dotEnvLoader = new \\Tomrf\\DotEnv\\DotEnvLoader();",

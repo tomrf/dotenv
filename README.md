@@ -5,7 +5,7 @@
 Load environment variables from dotenv file using the PHP built-in parse_ini_file() function
 with scanner mode `INI_SCANNER_TYPED` (See [PHP manual](https://www.php.net/manual/en/function.parse-ini-file.php))
 
-It is a simple, reliable and super fast way to load dotenv files without any bells and whistles.
+It is a simple, reliable and super fast way to load dotenv files without any bells nor whistles.
 
 📔 [Go to documentation](#documentation)
 
@@ -78,4 +78,4 @@ public function loadImmutable(
 
 ***
 
-_Generated 2022-07-10T02:09:11+02:00 using 📚[tomrf/readme-gen](https://packagist.org/packages/tomrf/readme-gen)_
+_Generated 2023-04-21T13:16:14+00:00 using 📚[tomrf/readme-gen](https://packagist.org/packages/tomrf/readme-gen)_
